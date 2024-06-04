@@ -22,7 +22,7 @@ function HeroSection() {
             <SiGmail className='h-6 w-6' />
           </div>
           <div className='w-full h-2 bg-[#4a5d5f] blur-[2px] rounded-full '></div>
-            <div className='w-full h-2 bg-[#339989] blur-[2px] rounded-full translate-x-2'></div>
+          <div className='w-full h-2 bg-[#339989] blur-[2px] rounded-full translate-x-2'></div>
         </Link>
       </div>
       <div className='relative'>
@@ -40,12 +40,12 @@ function HeroSection() {
 
         </div>
         <div className='absolute bottom-5 sm:bottom-14 max-sm:translate-x-1/2 left-0 sm:left-10'>
-        <MovingBorderBtn borderRadius='1.75rem className="absolute'>
-          <p>Available For Work</p>
-        </MovingBorderBtn>
+          <MovingBorderBtn borderRadius='1.75rem className="absolute'>
+            <p>Available For Work</p>
+          </MovingBorderBtn>
         </div>
       </div>
-      
+
     </div>
   )
 }
