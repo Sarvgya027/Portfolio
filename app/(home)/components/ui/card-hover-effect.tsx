@@ -1,8 +1,8 @@
-'use client'
+
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import React, { ReactNode, useState } from "react";
+import { useState } from "react";
 import { IconType } from "react-icons";
 
 export const HoverEffect = ({
@@ -11,61 +11,56 @@ export const HoverEffect = ({
 }: {
   items: {
     text: string;
-    Icon: ReactNode;
+    Icon: IconType;
   }[];
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-
   return (
     <div
       className={cn(
-        "grid grid-cols-3 w-full md:grid-cols-3 lg:grid-cols-4  py-10",
+        "grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4  py-10",
         className
       )}
     >
       {items.map((item, idx) => {
-        // const Icons = item.Icon
-        return (
-          <div
-            key={idx}
-            className="relative group  block p-2 h-full w-full"
-            onMouseEnter={() => setHoveredIndex(idx)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
-            <AnimatePresence>
-              {hoveredIndex === idx && (
-                <motion.span
-                  className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-lg"
-                  layoutId="hoverBackground"
-                  initial={{ opacity: 0 }}
-                  animate={{
-                    opacity: 1,
-                    transition: { duration: 0.15 },
-                  }}
-                  exit={{
-                    opacity: 0,
-                    transition: { duration: 0.15, delay: 0.2 },
-                  }}
-                />
-              )}
-            </AnimatePresence>
-            <div className="rounded-md w-full overflow-hidden bg-[#131515] group-hover:ring-2 cursor-pointer ring-[#339989] relative z-20 transition-all duration-500">
-              <div className="py-10 z-50 relative space-y-5">
-                <div className="flex items-center justify-center">
-                {React.cloneElement(item.Icon, { className: 'w-8 h-8' })}
-                </div>
-                <p className="text-xl font-bold text-center text-gray-300">{item.text}</p>
-              </div>
+        const Icon = item.Icon
+        return <div
+          key={idx}
+          className="relative group  block p-2 h-full w-full"
+          onMouseEnter={() => setHoveredIndex(idx)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
+          <AnimatePresence>
+            {hoveredIndex === idx && (
+              <motion.span
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-md"
+                layoutId="hoverBackground"
+                initial={{ opacity: 0 }}
+                animate={{
+                  opacity: 1,
+                  transition: { duration: 0.15 },
+                }}
+                exit={{
+                  opacity: 0,
+                  transition: { duration: 0.15, delay: 0.2 },
+                }}
+              />
+            )}
+          </AnimatePresence>
+          <div className="rounded-md w-full p-4 overflow-hidden bg-[#131511] group-hover:ring-2 cursor-pointer ring-[#339989] relative z-20 transition-all duration-500">
+            <div className="py-10 z-50 flex flex-col items-center justify-center  relative space-y-5 ">
+              <Icon className="w-8 h-8" />
+              <p className="text-xl font-bold text-center text-gray-300">{item.text}</p>
+              
             </div>
           </div>
-        );
+        </div>
       })}
     </div>
   );
 };
-
 
 // export const Card = ({
 //   className,

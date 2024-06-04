@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 		images: "/image.png",
 		type: "website",
 	},
-	keywords: ["daily web coding", "chensokheng", "dailywebcoding"],
+	keywords: ["daily web coding", "Sarvgya Verma", "sarvgya027"],
 };
 
 

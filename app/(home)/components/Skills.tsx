@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Title from './Title'
 import { HoverEffect } from './ui/card-hover-effect'
@@ -21,60 +22,60 @@ function Skills() {
   const skills = [
     {
       text: "TypeScript",   
-      Icon: <SiTypescript />
+      Icon: SiTypescript 
     },
     {
       text: "JavaScript",
-      Icon: <IoLogoJavascript />
+      Icon: IoLogoJavascript 
     },
     {
       text: "Python",
-      Icon: <FaPython />
+      Icon: FaPython 
     },
     {
       text: "React",
-      Icon: <FaReact />
+      Icon: FaReact 
     },
     {
       text: "Next.js",
-      Icon: <RiNextjsFill />
+      Icon: RiNextjsFill 
     },
     {
       text: "Tailwind CSS",
-      Icon: <RiTailwindCssFill />
+      Icon: RiTailwindCssFill 
     },
     {
       text: "Node.js",
-      Icon: <FaNodeJs />
+      Icon: FaNodeJs 
     },
     {
       text: "Express.js",
-      Icon: <SiExpress />
+      Icon: SiExpress 
     },
     {
       text: "Prisma",
-      Icon: <SiPrisma />
+      Icon: SiPrisma 
 
     },
     {
       text: "Supabase",
-      Icon: <RiSupabaseFill />
+      Icon: RiSupabaseFill 
     },
     {
       text: "MongoDB",
-      Icon: <DiMongodb />
+      Icon: DiMongodb 
     },
     {
       text: "MySQL",
-      Icon: <DiMysql />
+      Icon: DiMysql 
     },
     {
       text: "Git",
-      Icon: <FaGitAlt />
+      Icon: FaGitAlt
     },
     {
       text: "Machine Learning",
-      Icon: <LuBrainCircuit />
+      Icon: LuBrainCircuit
     },
     
 
@@ -84,7 +85,7 @@ function Skills() {
 
     <div className='flex flex-col w-full items-center justify-center'>
       <div>
-      <Title text="Skills" className='' />
+      <Title text="Skills" />
     </div>
     <HoverEffect items={skills} />
     </div>

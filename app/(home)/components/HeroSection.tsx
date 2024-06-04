@@ -6,17 +6,17 @@ import { MovingBorderBtn } from './ui/moving-border';
 
 function HeroSection() {
   return (
-    <div className='w-[94%] min-h-[60vh] max-md:text-md lg:flex-row flex-col-reverse lg:gap-0 gap-14 mx-auto flex items-center justify-between'>
+    <div className='w-[94%] min-h-[60vh] max-md:text-md lg:flex-row flex-col-reverse lg:gap-0 gap-14 mx-auto flex items-center justify-between '>
       <div className='space-y-10 text-center lg:text-left'>
         <h1 className='text-4xl lg:text-5xl font-bold'>
-          Hi, I'm <span className='text-[#7DE2D1]'>Sarvgya Verma</span>,<br /> I am a{' '}
+          Hi, I&apos;m <span className='text-[#7DE2D1]'>Sarvgya Verma</span>,<br /> I am a{' '}
           <span className='bg-gradient-to-r from-[#DCE1DE] to-[#7DE2D1] bg-clip-text text-transparent'>
             Full-Stack
           </span>{' '}
           Developer
         </h1>
         <p className='md:w-96 text-[#EFF9F0]'>Based in India, I am passionate about building FullStack web applications</p>
-        <Link className='inline-block' href={"mailto:someo@gmail.com"}>
+        <Link className='inline-block' href={"mailto:sarvgyaverma027@gmail.com"}>
           <div className='flex flex-row items-center justify-center gap-4 hover:scale-105 hover:text-[#339989] transition-all duration-400'>
             <h1 className='text-2xl font-bold '>Contact Me</h1>
             <SiGmail className='h-6 w-6' />
