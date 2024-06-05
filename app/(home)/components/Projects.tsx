@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiNextdotjs, SiSupabase, SiTailwindcss } from 'react-icons/si'
+import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiShadcnui, SiSupabase, SiTailwindcss, SiVercel } from 'react-icons/si'
 import Title from './Title'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
@@ -8,32 +8,32 @@ import { DirectionAwareHover } from './ui/direction-aware-hover'
 function Projects() {
   const projects = [
     {
-      title: "Project 1",
-      tech: [SiNextdotjs, SiSupabase, SiTailwindcss],
-      link: "https://nextjs.org/",
+      title: "UiFry - UI template",
+      tech: [SiNextdotjs, SiTailwindcss],
+      link: "https://github.com/Sarvgya027/UiFry",
       cover: "/ProjectImages/project1.png",
-      background: "bg-[#7DE2D1]"
+      background: "bg-[#495B5B]"
     },
     {
-      title: "Project 1",
-      tech: [SiNextdotjs, SiSupabase, SiTailwindcss],
-      link: "https://nextjs.org/",
-      cover: "",
-      background: "bg-[#7DE2D1]"
+      title: "ResumeForger - Resume builder",
+      tech: [SiReact, SiFirebase, SiTailwindcss],
+      link: "https://github.com/Sarvgya027/ResumeForger-complete",
+      cover: "/ProjectImages/project2.png",
+      background: "bg-[#495B5B]"
     },
     {
-      title: "Project 1",
-      tech: [SiNextdotjs, SiSupabase, SiTailwindcss],
-      link: "https://nextjs.org/",
-      cover: "",
-      background: "bg-[#7DE2D1]"
+      title: "Chatify - Chat web app",
+      tech: [SiReact, SiMongodb, SiNodedotjs, SiExpress],
+      link: "https://github.com/Sarvgya027/Chatify",
+      cover: "/ProjectImages/image4.jpg",
+      background: "bg-[#495B5B]"
     },
     {
-      title: "Project 1",
-      tech: [SiNextdotjs, SiSupabase, SiTailwindcss],
-      link: "https://nextjs.org/",
-      cover: "",
-      background: "bg-[#7DE2D1]"
+      title: "Engage - social media web app",
+      tech: [SiNextdotjs, SiPrisma, SiPostgresql, SiTailwindcss],
+      link: "https://github.com/Sarvgya027/Engage",
+      cover: "/ProjectImages/image.png",
+      background: "bg-[#495B5B]"
     },
   ]
   return (
@@ -49,7 +49,7 @@ function Projects() {
                 <div className='space-y-5'>
  
                 <h1 className='text-2xl font-bold'>{project.title}</h1>
-                <div className='flex items-center justify-center gap-5'>{project.tech.map((Icon, index) => <Icon key={index} className='w-10 h-10' />) }</div>
+                <div className='flex items-center justify-start gap-5'>{project.tech.map((Icon, index) => <Icon key={index} className='w-10 h-10' />) }</div>
                 </div>
               </DirectionAwareHover>
               
