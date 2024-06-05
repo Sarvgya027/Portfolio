@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiShadcnui, SiSupabase, SiTailwindcss, SiVercel } from 'react-icons/si'
+import { SiExpress, SiFirebase, SiFramer, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiShadcnui, SiSupabase, SiTailwindcss, SiVercel } from 'react-icons/si'
 import Title from './Title'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
@@ -7,6 +7,14 @@ import { DirectionAwareHover } from './ui/direction-aware-hover'
 
 function Projects() {
   const projects = [
+    {
+      title: "Personal Portfolio,",
+      tech: [SiNextdotjs, SiTailwindcss, SiVercel, SiFramer, SiShadcnui],
+      link: "https://github.com/Sarvgya027/Portfolio",
+      cover: "/ProjectImages/project3.png",
+      background: "bg-[#495B5B]"
+
+    },
     {
       title: "UiFry - UI template",
       tech: [SiNextdotjs, SiTailwindcss],
@@ -26,6 +34,13 @@ function Projects() {
       tech: [SiReact, SiMongodb, SiNodedotjs, SiExpress],
       link: "https://github.com/Sarvgya027/Chatify",
       cover: "/ProjectImages/image4.jpg",
+      background: "bg-[#495B5B]"
+    },
+    {
+      title: "King's",
+      tech: [SiReact, SiMongodb, SiNodedotjs, SiExpress, SiTailwindcss],
+      link: "https://github.com/Sarvgya027/ResumeForger-complete",
+      cover: "/ProjectImages/project4.png",
       background: "bg-[#495B5B]"
     },
     {

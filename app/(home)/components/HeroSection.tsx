@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 import { SiGmail } from "react-icons/si";
-import { TbBrandGmail } from "react-icons/tb";
+
 import { MovingBorderBtn } from './ui/moving-border';
 
 function HeroSection() {
@@ -9,8 +9,8 @@ function HeroSection() {
     <div className='w-[94%] min-h-[60vh] max-md:text-md lg:flex-row flex-col-reverse lg:gap-0 gap-14 mx-auto flex items-center justify-between '>
       <div className='space-y-10 text-center lg:text-left'>
         <h1 className='text-4xl lg:text-5xl font-bold'>
-          Hi, I&apos;m <span className='text-[#7DE2D1]'>Sarvgya Verma</span>,<br /> I am a{' '}
-          <span className='bg-gradient-to-r from-[#DCE1DE] to-[#7DE2D1] bg-clip-text text-transparent'>
+          Hi, I&apos;m <span className='bg-gradient-to-r from-[#DCE1DE] to-[#339989] bg-clip-text text-transparent'>Sarvgya Verma</span>,<br /> I am a{' '}
+          <span className='bg-gradient-to-r from-[#DCE1DE] to-[#339989] bg-clip-text text-transparent'>
             Full-Stack
           </span>{' '}
           Developer
@@ -28,12 +28,12 @@ function HeroSection() {
       <div className='relative'>
         <div className='w-72 h-72 space-y-3 -rotate-[30deg]'>
           <div className='flex gap-3 translate-x-8'>
-            <div className='w-32 h-32 rounded-2xl bg-[#7DE2D1]'></div>
-            <div className='w-32 h-32 rounded-full bg-[#339989]'></div>
+            <div className='w-32 h-32 rounded-2xl blur bg-[#7DE2D1]'></div>
+            <div className='w-32 h-32 rounded-full blur bg-[#339989]'></div>
           </div>
           <div className='flex gap-3 -translate-x-8'>
-            <div className='w-32 h-32 rounded-2xl bg-[#4a5d5f]'></div>
-            <div className='w-32 h-32 rounded-full bg-[#DCE1DE]'></div>
+            <div className='w-32 h-32 rounded-2xl blur bg-[#4a5d5f]'></div>
+            <div className='w-32 h-32 rounded-full blur bg-[#DCE1DE]'></div>
           </div>
         </div>
         <div className='glow absolute top-[50%] right-1/2  '>
