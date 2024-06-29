@@ -23,10 +23,31 @@ function Projects() {
       background: "bg-[#495B5B]"
     },
     {
+      title: "UI1 - Prototype",
+      tech: [SiNextdotjs, SiTailwindcss],
+      link: "https://github.com/Sarvgya027/UI1",
+      cover: "/ProjectImages/project5.png",
+      background: "bg-[#495B5B]"
+    },
+    {
+      title: "Gitter - Github Clone",
+      tech: [SiReact, SiMongodb, SiNodedotjs, SiExpress, SiTailwindcss],
+      link: "https://github.com/Sarvgya027/Gitter",
+      cover: "/ProjectImages/project6.png",
+      background: "bg-[#495B5B]"
+    },
+    {
       title: "ResumeForger - Resume builder",
       tech: [SiReact, SiFirebase, SiTailwindcss],
       link: "https://github.com/Sarvgya027/ResumeForger-complete",
       cover: "/ProjectImages/project2.png",
+      background: "bg-[#495B5B]"
+    },
+    {
+      title: "Engage - social media web app",
+      tech: [SiNextdotjs, SiPrisma, SiPostgresql, SiTailwindcss],
+      link: "https://github.com/Sarvgya027/Engage",
+      cover: "/ProjectImages/image.png",
       background: "bg-[#495B5B]"
     },
     {
@@ -39,15 +60,8 @@ function Projects() {
     {
       title: "King's",
       tech: [SiReact, SiMongodb, SiNodedotjs, SiExpress, SiTailwindcss],
-      link: "https://github.com/Sarvgya027/ResumeForger-complete",
+      link: "https://github.com/Sarvgya027/King-s",
       cover: "/ProjectImages/project4.png",
-      background: "bg-[#495B5B]"
-    },
-    {
-      title: "Engage - social media web app",
-      tech: [SiNextdotjs, SiPrisma, SiPostgresql, SiTailwindcss],
-      link: "https://github.com/Sarvgya027/Engage",
-      cover: "/ProjectImages/image.png",
       background: "bg-[#495B5B]"
     },
   ]
